@@ -23,6 +23,7 @@ class CyberEnv(gym.Env):
 
 
     def step(self, action):
+        action = int(action)
         reward = 0
         terminated = False
         truncated = False
